@@ -1,0 +1,30 @@
+/* @media screen and (width >= 300px) {
+  body {
+    background-color: darkgreen;
+  }
+
+} */
+
+.paraWrap {
+  
+  @media screen and (width <= 735px) {
+    /* background-color: darkgreen; */
+    padding: 0 2rem;
+  }
+  
+  @media screen and (width >= 736px) {
+    /* background-color: darkblue; */
+    padding: 0 4rem;
+  }
+  
+  @media screen and (width >= 870px) {
+    /* background-color: darkorange; */
+    padding: 0 8rem;
+  }
+  
+  @media screen and (width >= 1280px) {
+    /* background-color: purple; */
+    padding: 0 11rem;
+  }
+}
+

@@ -10,8 +10,11 @@ function makeStyles(textAlign: string, marginBottom?: number) {
   // align
   // margin-bottom
   const s = {
-    "text-align": textAlign || "center",
+    "text-align": "justified", // textAlign || "center",
     "margin-bottom": marginBottom || "1em",
+    "font-size": "1rem",
+    "line-height": 1.65,
+    "font-weight": 300
   };
   return Object.entries(s)
     .map((s) => {
@@ -36,14 +39,16 @@ export const Text: Component<TextProps> = (props) => {
   // const cls = clsx({
   //   "align: center": true
   // })
+  console.log('variant', props.variant)
   return (
-    <Switch fallback={"Loading"}>
-      <Match when={(props.variant = "h1")}>
+    <Switch>
+      <Match when={(props.variant === "h1")}>
         <h1 style={styles}>{props.children}</h1>
       </Match>
-      <Match when={(props.variant = "p")}>
+      <Match when={(props.variant === "p")}>
         <p style={styles}>{props.children}</p>
       </Match>
+      
     </Switch>
   );
 };
