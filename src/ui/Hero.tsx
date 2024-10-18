@@ -3,7 +3,7 @@ import classes from "./hero.module.css";
 import iGitHub from "../assets/logos/github-octocat.svg";
 import iLinkedIn from "../assets/logos/linkedIn.png";
 import iBlog from "../assets/blog.png"
-
+import styles from './text.module.css';
 const linkedInURL = "https://www.linkedin.com/in/carlbecker/";
 const gitHubURL = "https://github.com/klequis";
 const blogURL = "https://carlbecker.dev/";

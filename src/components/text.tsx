@@ -6,13 +6,17 @@ import type { Component, JSXElement } from "solid-js";
 //   marginBottom: number;
 // };
 
-function makeStyles(textAlign: string, marginBottom?: number) {
+type Variant = "h1" | "h2" | "p";
+
+function makeStyles(textAlign: string, variant: Variant, marginBottom?: number) {
   // align
   // margin-bottom
   const s = {
     "text-align": "justified", // textAlign || "center",
     "margin-bottom": marginBottom || "1em",
-    "font-size": "1rem",
+    "font-size": variant => { 
+      const v = {h1: '2em'}
+    },
     "line-height": 1.65,
     "font-weight": 300
   };
@@ -28,7 +32,7 @@ function makeStyles(textAlign: string, marginBottom?: number) {
 type TextAlign = "left" | "center";
 
 type TextProps = {
-  variant: "h1" | "h2" | "p";
+  variant: Variant;
   children: JSXElement;
   textAlign: TextAlign;
   marginBottom?: number
@@ -43,7 +47,7 @@ export const Text: Component<TextProps> = (props) => {
   return (
     <Switch>
       <Match when={(props.variant === "h1")}>
-        <h1 style={styles}>{props.children}</h1>
+        <h1>{props.children}</h1>
       </Match>
       <Match when={(props.variant === "p")}>
         <p style={styles}>{props.children}</p>
