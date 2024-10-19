@@ -6,7 +6,7 @@ import type { Component, JSXElement } from "solid-js";
 //   marginBottom: number;
 // };
 
-type Variant = "h1" | "h2" | "p";
+type Variant = "h1" | "h2" | "h3" | "p";
 
 function makeStyles(textAlign: string, variant: Variant, marginBottom?: number) {
   // align
@@ -29,17 +29,15 @@ function makeStyles(textAlign: string, variant: Variant, marginBottom?: number) 
 
 // I'M WRAPPING THE ABOUT TEXT IN <Text></Text>
 
-type TextAlign = "left" | "center";
-
 type TextProps = {
   variant: Variant;
   children: JSXElement;
-  textAlign: TextAlign;
-  marginBottom?: number
 };
 
+// h1, h2, p, subtitle1, subtitle2
+
 export const Text: Component<TextProps> = (props) => {
-  const styles = makeStyles(props.textAlign, props.marginBottom);
+  // const styles = makeStyles(props.textAlign, props.marginBottom);
   // const cls = clsx({
   //   "align: center": true
   // })
@@ -49,8 +47,14 @@ export const Text: Component<TextProps> = (props) => {
       <Match when={(props.variant === "h1")}>
         <h1>{props.children}</h1>
       </Match>
+      <Match when={(props.variant === "h2")}>
+        <h2>{props.children}</h2>
+      </Match>
+      <Match when={(props.variant === "h3")}>
+        <h3>{props.children}</h3>
+      </Match>
       <Match when={(props.variant === "p")}>
-        <p style={styles}>{props.children}</p>
+        <p>{props.children}</p>
       </Match>
       
     </Switch>

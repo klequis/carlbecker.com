@@ -53,3 +53,24 @@ code {
     font-size: 15pt;
   }
 }
+
+/* logos */
+.logoSocial {
+  max-height: 40px
+}
+
+.logoWPF {
+  max-width: 160px;
+}
+.logoSilverlight {
+  max-width: 80px;
+}
+
+.section-white {
+  background-color: white;
+}
+
+.section-blue {
+  background-color: #005ca8;
+  color: white;
+}
