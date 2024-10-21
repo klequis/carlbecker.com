@@ -1,3 +1,7 @@
+html {
+  font-size: 16px !important;
+}
+
 body {
   line-height: 1;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -9,15 +13,41 @@ body {
   margin: 0;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #005ca8;
+  padding: 4em 0 4em 0
+}
+
+footer {
+  background-color: #24292e;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-@media screen and (max-width: 480px) {
-  html {
-    min-width: 320px;
-  }
+p {
+  padding: 0 2rem
+}
+
+h1 {
+  margin-bottom: 1em;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 4.0rem;
+  line-height: 1.2;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 360px) {
@@ -25,32 +55,55 @@ code {
     /* font-size: 10pt; */
     font-size: 11pt;
   }
-}
-
-@media screen and (max-width: 736px) {
-  html {
-    font-size: 11pt;
-    /* font-size: 12pt; */
+  p {
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 361) and (max-width: 480px) {
+  html {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 481) and (width: 736px) {
+  html {
+    font-size: 11pt;
+    
+    /* font-size: 12pt; */
+  }
+  p {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (min-width: 737) and (max-width: 1280px) {
   html {
     /* font-size: 12pt; */
     font-size: 13pt;
   }
+  p {
+    padding: 0 4rem;
+  }
 }
-
-@media screen and (max-width: 1680px) {
+/* @media (min-width: 30em) and (max-width: 50em) {
+} */
+@media screen and (min-width: 1280px) and (max-width: 1680px) {
   html {
     /* font-size: 14pt; */
     font-size: 15pt;
+  }
+  p {
+    padding: 0 11rem;
   }
 }
 @media screen and (min-width: 1680px) {
   html {
     /* font-size: 14pt; */
     font-size: 15pt;
+  }
+  p {
+    padding: 0 18rem;
   }
 }
 
@@ -74,3 +127,6 @@ code {
   background-color: #005ca8;
   color: white;
 }
+
+
+
