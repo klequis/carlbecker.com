@@ -1,8 +1,20 @@
 import iTVC from "../assets/tvc.jpg";
 
 export const TVC = () => {
-  return (
-    <section>
+  return "hi"
+}
+
+// export const TVC = () => {
+//   return (
+    
+//   )
+// }
+
+// <div class="image-container">
+
+//      <img src={iTVC} alt="people in conference room working on laptops with a big TV on the wall." />
+
+/* <section class="section-white">
       <div class="text-container">
         <h2>TriValley Coders</h2>
         <h3>Founder</h3>
@@ -14,13 +26,4 @@ export const TVC = () => {
           has held more than 160 events.
         </p>
       </div>
-      <div class="image-container">
-        <img
-          src={iTVC}
-          class="image"
-          alt="people in conference room working on laptops with a big TV on the wall."
-        />
-      </div>
-    </section>
-  );
-};
+    </section> */

@@ -8,13 +8,13 @@ import { NYCWPFC } from "./ui/nyc-wpf-c";
 import { OnceUponATime } from "./ui/once-upon-time";
 import { HKNC } from "./ui/hknc";
 import { CACF } from "./ui/cacf";
-import { Footer } from './ui/footer'
+import { Footer } from "./ui/footer";
 
 // This is home.jsx in previous project
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <LatestActivities />
       <TVC />
@@ -26,7 +26,7 @@ function App() {
       <HKNC />
       <CACF />
       <Footer />
-    </div>
+    </>
   );
 }
 
