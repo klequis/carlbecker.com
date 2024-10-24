@@ -17,7 +17,7 @@ export const NYCWPFC = () => {
           src={iWPF}
           class="logoWPF"
           alt="microsoft windows presentation foundation logo"
-        />
+        />  
         <img
           src={iSilverlight}
           class="logoSilverlight "

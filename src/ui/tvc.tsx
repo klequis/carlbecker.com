@@ -1,4 +1,4 @@
-import iTVC from "../assets/tvc.jpg";
+import iTVC from "../assets/tvc01.jpg";
 
 export const TVC = () => {
   return (
@@ -8,10 +8,12 @@ export const TVC = () => {
         <h3>Founder</h3>
         <p>
           TriValley Coders was founded in 2016 as a community of software
-          developers helping each other learn to code. Over the past 2.5 years
-          it has evolved into a class-like format with mentors helping attendees
-          to learn specific MERN Stack skills. Since inception, TriValley Coders
-          has held more than 160 events.
+          developers helping each other learn to code. It evolved into a
+          class-like format with mentors helping attendees learning full-stack
+          developer skills. From 2016 to 2019 we held over 200 meetings.
+          Many of our attendees went on to find full-time employment as web
+          developers. I loved meeting so many people aspiring to make their lives
+          better!
         </p>
       </div>
       <div class="image-container">

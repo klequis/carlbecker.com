@@ -20,9 +20,3 @@ export const OnceUponATime = () => {
     </section>
   );
 };
-
-// <img
-//           src={iRiding}
-//           style="max-width: 500px"
-//           alt="Carl riding a dappled grey horse trotting"
-//         />

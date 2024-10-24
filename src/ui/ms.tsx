@@ -13,7 +13,7 @@ export const MS = () => {
         <p>
           Applications I worked on concerned CRM, Knowledge Management, Document
           Management, Banker & Analyst Productivity, reducing information
-          overload, Firmwide Branding and itchbook automation. I have often
+          overload, Firmwide Branding and pitchbook automation. I have often
           been called 'the grandfather of pitchbook automation', although
           dropping the 'grand' would be fine with me.
         </p>

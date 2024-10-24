@@ -1,5 +1,5 @@
 import { Header } from "./ui/header";
-import { LatestActivities } from "./ui/latest-activities";
+import { LatestActivities as SolidStartRouting } from "./ui/solid-start-routing";
 import { TVC } from "./ui/tvc";
 import { ThePast } from "./ui/the-past";
 import { MS } from "./ui/ms";
@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Header />
-      <LatestActivities />
+      <SolidStartRouting />
       <TVC />
       <ThePast />
       <MS />

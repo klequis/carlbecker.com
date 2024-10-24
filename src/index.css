@@ -55,8 +55,11 @@ p {
   margin: 0 2rem;
 }
 
+p:nth-child(2) {
+  margin-bottom: 2em;
+}
+
 h1 {
-  /* margin-bottom: 1em; */
   margin-top: 0px;
   text-align: center;
   font-size: 4.0rem;
@@ -82,59 +85,47 @@ h3 {
 }
 
 @media screen and (max-width: 360px) {
-  html {
-    /* font-size: 10pt; */
-    font-size: 11pt;
-  }
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    /* color: red; */
   }
 }
 
-@media screen and (min-width: 361) and (max-width: 480px) {
-  html {
-    min-width: 320px;
+/* @media screen and (min-width: 361px) and (max-width: 480px) {
+  p {
+    color: green;
   }
-}
+} */
 
-@media screen and (min-width: 481) and (width: 736px) {
-  html {
-    font-size: 11pt;
-    
-    /* font-size: 12pt; */
-  }
+@media screen and (min-width: 481px) and (max-width: 736px) {
   p {
     padding: 0 4rem;
+    font-size: 1.2rem;
+    /* color: white; */
   }
 }
 
-@media screen and (min-width: 737) and (max-width: 1280px) {
-  html {
-    /* font-size: 12pt; */
-    font-size: 13pt;
-  }
+@media screen and (min-width: 737px) and (max-width: 1280px) {
   p {
     padding: 0 4rem;
+    font-size: 1.2rem;
+    /* color: aquamarine */
   }
 }
 /* @media (min-width: 30em) and (max-width: 50em) {
 } */
 @media screen and (min-width: 1280px) and (max-width: 1680px) {
-  html {
-    /* font-size: 14pt; */
-    font-size: 15pt;
-  }
   p {
     padding: 0 11rem;
+    font-size: 1.2rem;
+    /* color: orange; */
   }
 }
 @media screen and (min-width: 1680px) {
-  html {
-    /* font-size: 14pt; */
-    font-size: 15pt;
-  }
   p {
-    padding: 0 18rem;
+    padding: 0 11rem;
+    font-size: 1.2rem;
+    /* color: purple; */
   }
 }
 
@@ -145,9 +136,10 @@ h3 {
 
 .wpf-sl-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
+  min-width: 200px;
   /* background-color: orange; */
 }
 
@@ -163,13 +155,8 @@ h3 {
 }
 
 .logoCACF {
-  /* max-width: 220px; */
   max-height: 50px;
 }
-
-/* .logoGithub {
-  max-height: 50px;
-} */
 
 section {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 0px 0px inset;
@@ -252,10 +239,13 @@ section {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1180px;
+  max-width: 900px;
   /* display: block */
 }
 
 .logo-container {
   padding-top: 2rem;
 }
+
+
+

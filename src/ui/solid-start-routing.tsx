@@ -4,8 +4,8 @@ export const LatestActivities = () => {
   return (
     <section class="section-white">
       <div class="text-container">
-        <h2>Latest Activities</h2>
-        <h3>SolidStart Routing</h3>
+        <h2>SolidStart Routing</h2>
+        <h3>File-based Routing with SolidStart</h3>
         <p>
           A hands-on guide to learning client-side routing with SolidStart and
           Solid Router, covering file-based routing, static and dynamic routes,
@@ -16,11 +16,13 @@ export const LatestActivities = () => {
         </p>
       </div>
       <div class="image-container">
-        <img
-          src={iTitlePage}
-          class="image book-image"
-          alt="book: SolidStart Routing"
-        />
+        <a href="https://leanpub.com/solidstart-routing-book">
+          <img
+            src={iTitlePage}
+            class="image book-image"
+            alt="book: SolidStart Routing"
+          />
+        </a>
       </div>
     </section>
   );
